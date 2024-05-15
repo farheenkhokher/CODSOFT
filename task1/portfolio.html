@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My First Portfolio</title>
+    <script src="https://kit.fontawesome.com/5d19e7f9e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">  <!--header-->
+        <div class="container" >
+            <nav>
+                <img src="images/logo1.jpg" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <p>Web Designer/Developer</p></br>
+                <h1>Hi! This is <b><span>Farheen Maqsood</span></b></h1>
+                <h2>I am passionate web developer who want to apply her skills to create wonderful and amazing website.</h2>
+                <div class="btn">
+                    <a href="cv.pdf" download class="button">Download CV</a>
+                </div>
+            
+            </div>
+       </div>  
+    </div>
+
+   <div id="about"> <!--About of portfolio-->
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/5.jpg">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there, I'm Farheen Maqsood, a passionate web developer and designer. With a blend of technical skills in coding and design, I create visually appealing and user-friendly websites. From crafting responsive layouts to optimizing performance, I ensure every project exceeds expectations. I thrive in collaborative environments and stay updated with the latest industry trends. Let's build something amazing together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>PHP developer</span><br>Developing web/App Interface</li>
+                        <li><span>HTML|CSS</span><br>Designing web/App Interface</li>
+                        <li><span>BackEnd| DBMS</span><br>BackEnd Management Skills</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>DBMS Administation</span><br>DBMS Internship at PBS (year:2022)</li>
+                        <li><span>C# Developer</span><br>C# Interface development (Year: 2022)</li>
+                        <li><span>Office Administration</span><br>Private Sector (Year: 2023-2024)</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>MCS (Masters Of Computer Science)</span><br>Year 2021-2023</li>
+                        <li><span>BSC (Becholars of Science)</span><br>Year 2017-2019</li>
+                        <li><span>FSC (Faculty of Science)</span><br>Year 2015-2017</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div> 
+   
+  <!-------------SKILLS-------------> 
+
+  <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Proficient in web design, adept at creating visually appealing and intuitive user interfaces that elevate user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-php"></i>
+                <h2>PHP Developer</h2>
+                <p>A PHP developer proficient in XAMPP server setup, adept in crafting dynamic web applications with HTML, CSS, and JavaScript for seamless user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DB Administration</h2>
+                <p>Proficient in database administration, encompassing tasks such as database setup, configuration, maintenance, optimization, and security management across various platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-------------Projects------------->
+  
+  <div id="projects">
+    <div class="container">
+        <h1 class="sub-title"> My Projects</h1>
+            <div class="project-list">
+              <div class="project">
+                <img src="images/project1.jpg">
+                <div class="layer">
+                    <h3>CarWash Management System</h3>
+                    <p> In this project, we created website in which we will try to provide car washers details along with their services to the user. So that, whenever someone wants their car to get washed, they will easy go to some car washing points/garage near them and also they can call them to their home directly.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/project2.png">
+                <div class="layer">
+                    <h3>Student Regsistration System</h3>
+                    <p>Our student registration system streamlines enrollment processes with user-friendly interfaces and automated workflows. From capturing student data to managing course selections, it offers comprehensive functionality tailored to educational institutions. With robust security measures and customizable features, it ensures efficient administration and seamless student experiences.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+<!----------------------Contact Us---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>farheenkhokher21@gmail.com</p>
+                <p><i class="fa-solid fa-address-book"></i>+92 3250827737</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/farigul6?igsh=cWQ0MzJjMnN2MHdl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/farheen-khokher-476722238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/idkmaybe.farheen"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-btn">Submit</button>
+                </form>
+               <span id="msg"></span>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!----------------footer----------------->
+
+<footer class="footer">
+    <p><i class="fa-solid fa-copyright"></i>2024 CopyRight:My Portfloio. All rights reserved.</p>
+</footer>
+
+<!--------------Java Script--------------->
+     <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");   
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+     </script>
+
+     <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+     </script>
+      <!--script to add record of person who contact us-->
+
+      <script>  
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPYVPRDwZNcTVxiFRoDqUzC5NExQMn8Lj089l4QI7qzXNnf4AbAiebH5eCjFKXLD0p0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message sent successfully!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+               }, 5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
