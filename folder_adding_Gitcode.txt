@@ -1,0 +1,8 @@
+git code to upload folder on github
+
+1. git init
+2. git add . 
+3. git commit -m "commit message"
+4. git remote add origin "http link of github repositery"
+5. git push -u origin master    (or main instead if master if moving git repositary is in main)
+6. git status (to check status)
