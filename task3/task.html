@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="calculator" >
+        <input type="text" placeholder="0" id="calculate">
+
+        <div class="row">
+            <button class="active">AC</button>
+            <button class="active">%</button>
+            <button class="active">/</button>
+            <button class="del">C</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="active">-</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="active">+</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="active">*</button>
+        </div>
+        <div class="row">
+            <button class="button">00</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+let input = document.getElementById('calculate');
+let buttons = document.querySelectorAll('button');
+
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button =>{
+    button.addEventListener('click' , (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'AC'){
+           string = "";
+           input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'C'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+    })
+})
+</script>
